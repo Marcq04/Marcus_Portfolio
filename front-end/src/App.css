@@ -1,0 +1,482 @@
+/* navbar */
+.navbar {
+  background-color: #fff;
+  padding: 15px 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  width: 140px;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links ul li {
+  margin: 0 15px;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #000; /* Fixed visibility */
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.4s;
+}
+
+.nav-links ul li a:hover {
+  color: #ff0000;
+}
+
+.nav-links ul li a::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background: #ff0000;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links ul li a:hover::after {
+  width: 100%;
+}
+
+
+/* home section */
+.home {
+  height: 100vh; /* Full screen height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a202c; /* Equivalent to bg-gray-900 */
+  color: white;
+  padding-top: 80px; /* Adjust based on navbar height */
+}
+
+.home h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.home p {
+  font-size: 1.25rem;
+  margin-top: 10px;
+}
+
+/* Personal Data Section */
+.personal {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9EAFD; /* Light blue background */
+  padding: 60px 20px;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* About Me Text */
+.about-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin-bottom: 30px;
+}
+
+/* About Me Title */
+.about-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a202c;
+}
+
+/* Info Section - Resume & Cover Letter */
+.info-container {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.info-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+}
+
+/* Buttons for Resume & Cover Letter */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  text-decoration: none;
+  color: white;
+  background: #3182ce; /* Blue */
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #2b6cb0; /* Darker Blue */
+}
+
+/* Icon Styling */
+.icon {
+  font-size: 1.3rem;
+}
+
+/* Philosophy Section */
+.philosophy {
+  background: #edf2f7;
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+
+/* Academic Credentials Section */
+.academic {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFE893; /* Light yellow background */
+  padding: 60px 20px;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Academic Credentials Title */
+.academic-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a202c;
+}
+
+/* Credentials Container */
+.credentials-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Individual Credential Card */
+.credential-card {
+  background: #FBB4A5; /* Light red background */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.credential-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Credential Title (Degree Name) */
+.credential-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1a202c; /* Dark Gray */
+}
+
+/* Institution Name */
+.credential-institution {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #E3651D; /* Orange */
+  margin-top: 5px;
+}
+
+/* Date Styling */
+.credential-date {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #750E21; /* Dark Red */
+  margin-top: 5px;
+}
+
+
+/* Academic Work Section */
+.work {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc; /* Light gray background */
+  padding: 60px 20px;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Professional Summary Section */
+.professional {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #57109e; /* Light gray background */
+  padding: 60px 20px;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Professional Summary Title */
+.professional-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+/* Section Title */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 16px;
+}
+
+/* Work List Container */
+.work-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Individual Work Card */
+.work-card {
+  background: white;
+  padding: 16px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover Effect */
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Work Title (Project / Volunteer Role) */
+.work-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1a202c; /* Dark Gray */
+}
+
+/* Work Description */
+.work-description {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #4a5568; /* Medium Gray */
+  margin-top: 6px;
+  line-height: 1.6;
+}
+
+/* Capstone Project Section */
+.capstone {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1A55; /* Dark blue background */
+  padding: 60px 20px;
+  color: #2d3748;
+  text-align: left;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background-color: #2563eb; /* Blue */
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af; /* Darker Blue */
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #1e293b; /* Darker shade */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #718096; /* Lighter shade */
+}
+
+.capstone-section {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust as necessary */
+  max-width: none; /* Remove max-width */
+}
+
+/* Contact Form Section */
+.contact {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #150050;
+  padding: 60px 20px;
+  color: #2d3748;
+  text-align: center;
+}
+
+/* Form Styling */
+.contact form {
+  background: #3F0071;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact input, 
+.contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border 0.3s ease-in-out;
+}
+
+.contact input:focus, 
+.contact textarea:focus {
+  border-color: #2563eb; /* Blue border on focus */
+  outline: none;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #CDFCF6; /* Lighter shade */
+}
+
+/* Submit Button */
+.contact button {
+  background: #2563eb; /* Blue */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.contact button:hover {
+  background: #1e40af; /* Darker Blue */
+}
+
+.contact button:active {
+  transform: scale(0.95);
+}
+
+/* Contact Info Styling */
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  color: #CDFCF6;
+}
+
+.contact-info p {
+  margin: 0;
+}
+
+/* Social Icons */
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+  transform: scale(1.1);
+}
+
+/* Footer Section */
+.footer {
+  min-height: auto;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d3748; /* Dark grayish blue */
+  color: #f8f9fa; /* Light text */
+  text-align: center;
+  padding: 20px 0;
+}
